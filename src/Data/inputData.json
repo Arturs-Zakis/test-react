@@ -1,0 +1,4 @@
+[
+  { "id": 1, "type": "text", "labelText": "E-mail" },
+  { "id": 2, "type": "password", "labelText": "Password" }
+]

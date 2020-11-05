@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Children } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './App.scss';
+import Vivus from 'vivus';
+import LoginBlock from './Components/loginBlock';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LoginBlock />
   </React.StrictMode>,
   document.getElementById('root')
 );

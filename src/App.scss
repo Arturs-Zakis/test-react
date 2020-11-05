@@ -1,0 +1,80 @@
+@import 'normalize.css';
+
+$login-page-bg: '/media/bricks.svg';
+
+body {
+  background: url($login-page-bg);
+  min-height: 100vh;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  max-width: 1280px;
+  width: 100%;
+  min-height: 100vh;
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 70px;
+    .input-wrapper {
+      position: relative;
+      padding: 1rem 0;
+
+      .input {
+        border-radius: 25px;
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+      }
+
+      label {
+        position: absolute;
+        white-space: nowrap;
+        top: 50%;
+        left: 20px;
+        color: #7c7c7c;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+.btn {
+  outline: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-link {
+  position: relative;
+  margin: 0 0 0 0.4em;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  &::after {
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #7c7c7c;
+    left: 0;
+    bottom: -2px;
+    transition: 0.4s;
+    transform: scaleX(0);
+  }
+  &:hover {
+    cursor: pointer;
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
